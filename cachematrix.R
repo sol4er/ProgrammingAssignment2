@@ -1,13 +1,13 @@
 
 ## This function has four function inside it: get, set, setInv and getInv.
-## INPUT is any inverstible matrix
+## INPUT is any square and inverstible matrix
 ## OUTPUT the inverse of matrix and will be stored as list
 
 makeCacheMatrix <- function(x = matrix()) { ## get a square matrix assuming it is inversible
         InverseX <- NULL                    ## initialise the inverse matrix with NULL
         set <- function(y) {
                 x <<- y             ## substitutes the matrix x with y (the input) in the main function (makeCacheMatrix)
-                InverseX <<- NULL   ## restores to null the value of the inverse inverseX
+                InverseX <<- NULL   ## restores to null the value of the inverse inverseX in set function
         }
         get <- function() x
         setInv <- function(inverse) InverseX <<-inverse ##store the value of the input in a variable inverseX into the main
