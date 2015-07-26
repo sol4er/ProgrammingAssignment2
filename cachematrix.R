@@ -1,7 +1,7 @@
 
 ## This function has four function inside it: get, set, setInv and getInv.
 ## INPUT is any square and inverstible matrix
-## OUTPUT the inverse of matrix and will be stored as list
+## After inverse matrix computed in catcheSolve function, it will store it
 
 makeCacheMatrix <- function(x = matrix()) { ## get a square matrix assuming it is inversible
         InverseX <- NULL                    ## initialise the inverse matrix with NULL
@@ -21,6 +21,7 @@ makeCacheMatrix <- function(x = matrix()) { ## get a square matrix assuming it i
 
 
 ## This functtion will first verify the value inverseX exists and is not NULL.
+## Then compute the inverse of the INPUT matrix
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
